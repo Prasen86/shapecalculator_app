@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shapecalculator_app/homeScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,6 +25,9 @@ class _MyHomePageState extends State<MyHomePage> {
   //Method to write code for Guest Login
   void _loginGuest() {
     setState(() {});
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return ScreenApp();
+    }));
   }
 
   //Creating Widget for Main Body of the App
